@@ -3,6 +3,7 @@ import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
+  const title = 'Counter'
 
   function addToCounterHandler (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) 
   {
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-    <h1>Counter</h1>
+    <h1>{title}</h1>
     <h2>{count}</h2>
     <div>
     <button onClick={addToCounterHandler}> ADD</button>
